@@ -10,6 +10,7 @@ packages = [{include = "cookiecutter_terraform", from = "src"}]
 
 [tool.poetry.dependencies]
 python = ">=3.10,<3.13"
+cookiecutter = "^2.5.0"
 pydantic = "^2.5.2"
 pydantic-settings = "^2.1.0"
 
