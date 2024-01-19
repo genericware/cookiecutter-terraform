@@ -31,9 +31,9 @@ package:
 poetry build
 ```
 
-## run
+## usage
 
-terraform:
+run:
 ```shell
 terraform init
 terraform plan
@@ -41,16 +41,6 @@ terraform apply
 ```
 
 test:
-```shell
-pytest .
-```
-
-coverage:
-```shell
-coverage run -m pytest && coverage report -m
-```
-
-matrix:
 ```shell
 tox run
 ```
@@ -63,19 +53,4 @@ make -C docs html
 check:
 ```shell
 pre-commit run
-```
-
-format:
-```shell
-black .
-```
-
-lint:
-```shell
-ruff .
-```
-
-type:
-```shell
-mypy .
 ```
