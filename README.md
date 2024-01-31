@@ -26,7 +26,7 @@ poetry install --without dev
 ## build
 
 > [!IMPORTANT]  
-> `src/cookiecutter-terraform` is not currently used.
+> `src/cookiecutter_terraform` is not currently used.
 
 package:
 ```shell
