@@ -1,6 +1,6 @@
-# cookiecutter-terraform
+# {{ cookiecutter.project_name }}
 
-A [`cookiecutter`](https://github.com/cookiecutter/cookiecutter) template for [`terraform`](https://github.com/hashicorp/terraform) projects.
+{{ cookiecutter.project_description }}
 
 ## dependencies
 
@@ -8,6 +8,7 @@ A [`cookiecutter`](https://github.com/cookiecutter/cookiecutter) template for [`
 |--------------------------------------------|--------------------------------------------|
 | [pyenv](https://github.com/pyenv/pyenv)    | python version management                  |
 | [poetry](https://github.com/python-poetry) | python packaging and dependency management |
+| [terraform](https://www.terraform.io/)     | infrastructure as code automation          |
 
 ## install
 
@@ -25,9 +26,6 @@ poetry install --without dev
 
 ## build
 
-> [!IMPORTANT]  
-> `src/cookiecutter_terraform` is not currently used.
-
 package:
 ```shell
 poetry build
@@ -37,7 +35,9 @@ poetry build
 
 run:
 ```shell
-cookiecutter https://github.com/generic-infrastructure/cookiecutter-terraform
+terraform init
+terraform plan
+terraform apply
 ```
 
 test:
